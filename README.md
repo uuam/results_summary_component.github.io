@@ -1,6 +1,6 @@
-# Forntend Mentor Challenge - Results Summary Component [🔗]()
+# Forntend Mentor Challenge - Results Summary Component [🔗](https://uuam.github.io/results_summary_component.github.io/)
 
-[網頁]()
+[作品連結](https://uuam.github.io/results_summary_component.github.io/)
 
 ## 特點
 這個專案具有以下一些特點：
