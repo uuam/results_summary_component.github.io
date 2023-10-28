@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Jost:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,900&display=swap");
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  box-sizing: border-box;
+}
+body section {
+  max-width: 740px;
+  min-height: 512px;
+  margin: 8rem auto;
+  border-radius: 1.875rem;
+  background: #fff;
+  box-shadow: 10px 15px 50px 0px #ebf1ff;
+  display: flex;
+  overflow: hidden;
+}
+body section .result {
+  width: 100%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  border-radius: 1.875rem;
+  background: linear-gradient(180deg, #7857ff 0%, #2e2be9 100%);
+  text-align: center;
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+}
+body section .result .result-title {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+body section .result .circle {
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10rem;
+  background: linear-gradient(180deg, #4e21ca 0%, rgba(36, 33, 202, 0) 100%);
+  height: 200px;
+  width: 200px;
+  display: flex;
+}
+body section .result .circle span.score {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: normal;
+  transition: transform 0.2s;
+}
+body section .result .circle span.score.bounce {
+  transform: scale(1.5);
+}
+body section .result .circle span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+body section .result div {
+  display: flex;
+  width: 16.5rem;
+  flex-direction: column;
+  justify-content: start;
+  flex-shrink: 0;
+}
+body section .result div .status {
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 1.875rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+body section .result div .status-content {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+}
+body section .summary {
+  box-sizing: border-box;
+  flex: 50%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 2rem;
+}
+body section .summary h3 {
+  color: #303b5a;
+}
+body section .summary .summary-list {
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body section .summary .summary-list .summary-item {
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+  height: 3.375rem;
+}
+body section .summary .summary-list .summary-item.reaction {
+  background: rgba(255, 87, 87, 0.1);
+}
+body section .summary .summary-list .summary-item.reaction p {
+  color: rgb(255, 87, 87);
+}
+body section .summary .summary-list .summary-item.memory {
+  background: rgba(255, 176, 31, 0.1);
+}
+body section .summary .summary-list .summary-item.memory p {
+  color: rgb(255, 176, 31);
+}
+body section .summary .summary-list .summary-item.verbal {
+  background: rgba(0, 189, 145, 0.1);
+}
+body section .summary .summary-list .summary-item.verbal p {
+  color: rgb(0, 189, 145);
+}
+body section .summary .summary-list .summary-item.visual {
+  background: rgba(17, 37, 212, 0.1);
+}
+body section .summary .summary-list .summary-item.visual p {
+  color: rgb(17, 37, 212);
+}
+body section .summary .summary-list .summary-item div.title {
+  display: flex;
+  justify-content: start;
+}
+body section .summary .summary-list .summary-item div.title img {
+  margin-right: 0.625rem;
+}
+body section .summary .summary-list .summary-item div.precent {
+  color: #303b5a;
+}
+body section .summary .summary-list .summary-item div.precent span:first-child {
+  font-weight: 500;
+}
+body section .summary .summary-list .summary-item div.precent span:last-child {
+  opacity: 0.5;
+}
+body section .summary button {
+  border-radius: 50px;
+  background: #303b5a;
+  border: 0px;
+  width: 100%;
+  height: 3.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: Hanken Grotesk;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.7s;
+}
+body section .summary button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    border-radius: 0;
+    height: 100vh;
+  }
+  body .section .result {
+    border-radius: 0 0 1.875rem 1.875rem;
+    flex: 1; /* 允許元素填充所有可用空間 */
+    max-height: 45vh;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  body .section .result .result-title {
+    font-size: 1.125rem;
+  }
+  body .section .result .circle {
+    height: 8.5rem;
+    width: 8.5rem;
+  }
+  body .section .result .circle .score {
+    font-size: 3.5rem;
+  }
+  body .section .result .circle span {
+    font-size: 0.85rem;
+  }
+  body .section .result div .status {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  body .section .result div .status-content {
+    font-size: 1rem;
+  }
+  body .section .summary {
+    padding: 0.5rem;
+    justify-content: space-between;
+    max-height: 55vh;
+    height: 100%;
+    flex-wrap: nowrap;
+    padding: 1rem 2rem;
+  }
+  body .section .summary .summary-list {
+    height: 90%;
+    justify-content: space-evenly;
+  }
+  body .section .summary .summary-list .summary-item {
+    max-height: 3.75rem;
+    height: 100%;
+  }
+}
+@media (max-height: 715px) {
+  body .section .result {
+    max-height: 50vh;
+  }
+  body .section .result .circle {
+    height: 7rem;
+    width: 7rem;
+  }
+  body .section .result .circle .score {
+    font-size: 3rem;
+  }
+  body .section .result .circle span {
+    font-size: 0.7rem;
+  }
+  body .section .summary {
+    max-height: 50vh;
+    padding: 1rem 1.5rem;
+  }
+  body .section .summary .summary-list .summary-item {
+    max-height: 2.75rem;
+  }
+}/*# sourceMappingURL=style.css.map */
