@@ -15,11 +15,17 @@
 2. 動畫效果：點擊按鈕後，會有數字累加的動畫效果。
 3. JSON 資料讀取: 使用 fetch API 非同步讀取本地的 JSON 檔案，確保資料能夠動態且即時地被展示在頁面上。
 
+## 難題
+在開發這個專案的過程中，我遇到了一些挑戰，包括：
+
+1. 對於 json 資料讀取有些生疏，但練習後已能靈活運用。
+2. 本次的響應排版和過往的作品不同，元素板塊的安排需仔細思考。
+
 ## 使用的技術
 1. HTML
-2. CSS / SASS
+2. CSS
 3. Flex box
 4. javascript
 
-## 其他
-挑戰連結：[Challenge link](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)
+## 使用資源
+1. [reset.css](https://meyerweb.com/eric/tools/css/reset/)
