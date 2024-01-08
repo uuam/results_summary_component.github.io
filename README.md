@@ -20,7 +20,6 @@
 2. CSS / SASS
 3. Flex box
 4. javascript
-5. 
 
 ## 其他
 挑戰連結：[Challenge link](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)
