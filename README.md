@@ -1,4 +1,4 @@
-# Forntend Mentor Challenge - Results Summary Component [🔗]()
+# Forntend Mentor Challenge - Results Summary Component [🔗](https://uuam.github.io/results_summary_component.github.io/)
 
 這是對[Frontend Mentor｜Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)的解決專案
 
